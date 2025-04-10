@@ -8,8 +8,10 @@ export class WebSocketService {
   public connected = ref<boolean>(false);
   public username = ref<string>('');
   
-  // constructor(url = 'ws://localhost:8080') {
-  constructor(url = 'ws://echo.websocket.org') {
+  // Use secure WebSocket on production, and fall back to echo server when deployed
+  constructor(url = window.location.hostname === 'localhost' 
+    ? 'ws://localhost:8080' 
+    : 'wss://echo.websocket.org') {
     this.url = url;
   }
   
