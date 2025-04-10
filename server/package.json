@@ -1,0 +1,20 @@
+{
+  "name": "websocket-chat-server",
+  "version": "1.0.0",
+  "description": "WebSocket server for Vue chat application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "start-ts": "npx ts-node index.ts",
+    "build": "npx tsc"
+  },
+  "dependencies": {
+    "ws": "^8.14.2"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.5.6",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}
