@@ -8,7 +8,8 @@ export class WebSocketService {
   public connected = ref<boolean>(false);
   public username = ref<string>('');
   
-  constructor(url = 'ws://localhost:8080') {
+  // constructor(url = 'ws://localhost:8080') {
+  constructor(url = 'ws://echo.websocket.org') {
     this.url = url;
   }
   

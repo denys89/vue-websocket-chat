@@ -93,7 +93,3 @@ The application should now be available at http://localhost:8080
 - The WebSocket service is implemented as a singleton to maintain a single connection
 - The server will automatically try to reconnect if the connection is lost
 - User sessions persist via localStorage to maintain the username between page reloads
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
